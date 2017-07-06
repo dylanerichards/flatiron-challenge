@@ -16,6 +16,7 @@ class Comment {
 
   commentEl() {
     var commentString = `<li id=comment-${Comment.all.length}> ${this.commentContent}</li>`
+
     return commentString
   }
 
