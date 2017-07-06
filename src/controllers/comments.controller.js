@@ -24,12 +24,10 @@ class CommentsController {
 
     })
   }
-}
 
-CommentsController.render = function(comment) {
-  var ul = $("#comments-" + comment.imageId)
+  static render(comment) {
+    var ul = $("#comments-" + comment.imageId)
 
-  ul.append(comment.commentEl())
-
-  console.log(ul)
+    ul.append(comment.commentEl())
+  }
 }
